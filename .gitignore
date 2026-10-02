@@ -1,0 +1,18 @@
+# Windows files that do not belong in the Visualizer history
+Thumbs.db
+Desktop.ini
+
+# Temporary or interrupted-edit files
+*.tmp
+*.temp
+~$*
+
+# Local editor settings
+.vscode/
+.idea/
+
+# Client work stays off the public GitHub page unless Chrissy clearly approves it.
+/Dobitsch/
+/Esses/
+/test/
+/output/

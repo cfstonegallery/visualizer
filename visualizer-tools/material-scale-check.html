@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Material Scale Check</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: Arial, Helvetica, sans-serif;
+      --ink: #232323;
+      --soft: #f4f2ee;
+      --line: #d8d2c9;
+      --accent: #66756b;
+      --accent-dark: #455149;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #faf9f7; color: var(--ink); }
+    main { width: min(980px, calc(100% - 32px)); margin: 28px auto 48px; }
+    h1 { margin: 0 0 8px; font-size: clamp(28px, 5vw, 44px); }
+    h2 { margin-top: 0; }
+    p { line-height: 1.5; }
+    .note { color: #5a5752; margin-top: 0; }
+    .panel { background: white; border: 1px solid var(--line); border-radius: 16px; padding: 22px; margin-top: 18px; box-shadow: 0 8px 24px rgba(40, 34, 26, 0.06); }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    label { display: grid; gap: 6px; font-weight: 700; }
+    input { width: 100%; border: 1px solid #aaa39a; border-radius: 8px; padding: 11px 12px; font: inherit; }
+    input:focus { outline: 3px solid #dfe7e1; border-color: var(--accent); }
+    .full { grid-column: 1 / -1; }
+    .buttons { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+    button { border: 0; border-radius: 9px; padding: 11px 16px; font: inherit; font-weight: 700; cursor: pointer; }
+    .primary { background: var(--accent); color: white; }
+    .primary:hover { background: var(--accent-dark); }
+    .secondary { background: var(--soft); color: var(--ink); border: 1px solid var(--line); }
+    .result { background: #f4f7f4; border-left: 5px solid var(--accent); padding: 16px; border-radius: 8px; }
+    .result strong { font-size: 1.2rem; }
+    .error { background: #fff2f0; border-left-color: #a84032; }
+    canvas { width: 100%; height: auto; border: 1px solid var(--line); border-radius: 10px; background: white; margin-top: 14px; }
+    textarea { width: 100%; min-height: 145px; resize: vertical; border: 1px solid var(--line); border-radius: 9px; padding: 12px; font: inherit; line-height: 1.45; }
+    .small { font-size: 0.92rem; color: #625f5a; }
+    @media (max-width: 680px) { .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Material Scale Check</h1>
+    <p class="note">Use the maker's full sheet size first. This checks how a repeating material should look in a room picture. It is not an ordering or installation calculator.</p>
+
+    <section class="panel">
+      <h2>Room surface</h2>
+      <div class="grid">
+        <label>Surface width, in inches
+          <input id="surfaceWidth" type="number" min="0.01" step="0.01" value="48">
+        </label>
+        <label>Surface depth, in inches
+          <input id="surfaceDepth" type="number" min="0.01" step="0.01" value="36">
+        </label>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>One complete maker sheet</h2>
+      <div class="grid">
+        <label>Sheet side running across the surface, in inches
+          <input id="sheetWidth" type="number" min="0.01" step="0.01" value="12.5">
+        </label>
+        <label>Sheet side running front to back, in inches
+          <input id="sheetDepth" type="number" min="0.01" step="0.01" value="11">
+        </label>
+        <label>Pieces across one sheet <span class="small">optional</span>
+          <input id="piecesAcross" type="number" min="1" step="1" value="12">
+        </label>
+        <label>Rows through one sheet <span class="small">optional</span>
+          <input id="rowsDeep" type="number" min="1" step="1" value="12">
+        </label>
+      </div>
+      <div class="buttons">
+        <button class="secondary" id="turnSheet" type="button">Turn the sheet</button>
+        <button class="primary" id="calculate" type="button">Check the scale</button>
+      </div>
+    </section>
+
+    <section class="panel" aria-live="polite">
+      <h2>What the room picture should show</h2>
+      <div id="result" class="result"></div>
+      <canvas id="preview" width="760" height="500" aria-label="Simple top view showing the full sheet repeats"></canvas>
+      <p class="small">The green lines show full-sheet edges. The small circles are only a size check. The attached maker sheet still controls the exact color and pattern.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Words for the image maker</h2>
+      <textarea id="instructions" readonly></textarea>
+      <div class="buttons">
+        <button class="secondary" id="copy" type="button">Copy these words</button>
+      </div>
+    </section>
+  </main>
+  <script src="material-scale-check.js"></script>
+</body>
+</html>
