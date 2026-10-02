@@ -5,10 +5,10 @@ Use this check before the Visualizer workspace is sent to GitHub for the first t
 ## Current state — October 2, 2026
 
 - The public GitHub repository exists at `https://github.com/cfstonegallery/visualizer`.
-- The GitHub repository is currently empty.
+- The shared Visualizer system files and tools were first uploaded on October 2, 2026.
 - This Visualizer folder is connected to that GitHub repository.
 - The safe GitHub sign-in helper is installed on this computer.
-- The first upload is being prepared with client folders excluded.
+- Client folders are excluded from public uploads.
 
 ## Public-content choice for the first upload
 
