@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fresh Revision Builder</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: Arial, Helvetica, sans-serif;
+      --ink: #242321;
+      --muted: #645f58;
+      --paper: #fff;
+      --page: #f7f4ef;
+      --line: #d9d0c5;
+      --green: #68796d;
+      --green-dark: #455349;
+      --soft-green: #eef3ef;
+      --warn: #9d3f32;
+      --soft-warn: #fff1ee;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--page); color: var(--ink); }
+    main { width: min(980px, calc(100% - 30px)); margin: 28px auto 48px; }
+    h1 { margin: 0 0 8px; font-size: clamp(30px, 5vw, 46px); }
+    h2 { margin: 0 0 14px; font-size: 1.25rem; }
+    p { line-height: 1.5; }
+    a { color: var(--green-dark); }
+    .intro { color: var(--muted); margin-top: 0; }
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 20px 0; }
+    .step { background: var(--soft-green); border: 1px solid #ced9d1; border-radius: 14px; padding: 16px; }
+    .step strong { display: block; margin-bottom: 6px; }
+    .panel { background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 22px; margin-top: 18px; box-shadow: 0 8px 24px rgba(54, 44, 32, 0.06); }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    label { display: grid; gap: 7px; font-weight: 700; }
+    input, textarea { width: 100%; border: 1px solid #aaa197; border-radius: 9px; padding: 11px 12px; font: inherit; line-height: 1.45; background: white; }
+    textarea { min-height: 110px; resize: vertical; }
+    input:focus, textarea:focus { outline: 3px solid #dce7df; border-color: var(--green); }
+    .full { grid-column: 1 / -1; }
+    .small { font-size: 0.92rem; color: var(--muted); font-weight: 400; }
+    .check { display: flex; align-items: flex-start; gap: 10px; background: var(--soft-green); border: 1px solid #cfdacf; border-radius: 10px; padding: 14px; font-weight: 700; }
+    .check input { width: auto; margin-top: 3px; transform: scale(1.2); }
+    .buttons { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+    button { border: 0; border-radius: 9px; padding: 11px 16px; font: inherit; font-weight: 700; cursor: pointer; }
+    .primary { background: var(--green); color: white; }
+    .primary:hover { background: var(--green-dark); }
+    .secondary { background: #f2eee8; color: var(--ink); border: 1px solid var(--line); }
+    .message { display: none; margin-top: 14px; padding: 13px 14px; border-radius: 9px; background: var(--soft-warn); border-left: 5px solid var(--warn); color: #6e2b22; }
+    #request { min-height: 310px; }
+    @media (max-width: 700px) {
+      .grid, .steps { grid-template-columns: 1fr; }
+      .full { grid-column: auto; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Fresh Revision Builder</h1>
+    <p class="intro">Use this before every visualization change. It makes a complete new request from the original sources. It does not use the last AI-made picture.</p>
+
+    <div class="steps" aria-label="Three revision rules">
+      <div class="step"><strong>1. Start clean</strong>Use the untouched plan, photograph, and product pictures.</div>
+      <div class="step"><strong>2. Carry choices forward</strong>Write every approved detail, not only the newest change.</div>
+      <div class="step"><strong>3. Make a fresh picture</strong>Keep earlier AI-made drafts out of the image request.</div>
+    </div>
+
+    <section class="panel">
+      <h2>Room and view</h2>
+      <div class="grid">
+        <label>Job and room
+          <input id="room" type="text" placeholder="Example: Test — brick ranch exterior">
+        </label>
+        <label>Camera location and direction
+          <input id="camera" type="text" placeholder="Example: Original front-yard camera view">
+        </label>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Master sources</h2>
+      <div class="grid">
+        <label class="full">Original plan or photograph names <span class="small">one per line</span>
+          <textarea id="originalSources" placeholder="IMG_5417.jpeg&#10;original floor plan.pdf"></textarea>
+        </label>
+        <label class="full">Original product, material, fixture, or style pictures <span class="small">one per line</span>
+          <textarea id="appearanceSources" placeholder="cedar porch reference.png&#10;tile maker sheet.jpg"></textarea>
+        </label>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Complete current description</h2>
+      <div class="grid">
+        <label class="full">Every approved choice and correction
+          <textarea id="fullSpec" placeholder="Include the full layout, measurements, item locations, materials, sizes, direction, camera, and anything that must stay unchanged."></textarea>
+        </label>
+        <label class="full">What should change in this new draft?
+          <textarea id="change" placeholder="Describe the newest correction in plain language."></textarea>
+        </label>
+        <label class="check full">
+          <input id="noAiReference" type="checkbox">
+          <span>I checked the image list. No earlier AI-made visualization will be sent as a reference.</span>
+        </label>
+      </div>
+      <div class="buttons">
+        <button class="primary" id="build" type="button">Build fresh request</button>
+      </div>
+      <div id="message" class="message" role="alert"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Ready-to-copy image request</h2>
+      <textarea id="request" readonly placeholder="The complete fresh request will appear here."></textarea>
+      <div class="buttons">
+        <button class="secondary" id="copy" type="button">Copy this request</button>
+        <a href="material-scale-check.html">Open the material scale check</a>
+      </div>
+    </section>
+  </main>
+  <script src="fresh-revision-builder.js"></script>
+</body>
+</html>

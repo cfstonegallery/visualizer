@@ -1,6 +1,6 @@
 # Visualizer Learning Ledger
 
-This workspace-level ledger records what Chrissy's real work teaches the agents and the lightweight visualizer. Add only genuine learnings supported by an interaction. Preserve the history so later agents can understand why the workflow and system changed.
+This workspace-level ledger records what Chrissy's real work teaches the agents and the lightweight visualizer. Add only genuine learnings supported by an interaction. Preserve the history so later agents can understand why the workflow and system changed. When an older entry conflicts with a later correction, the newer entry controls.
 
 ## Entry format
 
@@ -760,4 +760,236 @@ This workspace-level ledger records what Chrissy's real work teaches the agents 
 - **Evidence:** Chrissy said, “zoe now commits to github as well,” asked to push the workspace, and supplied `https://github.com/cfstonegallery/visualizer`.
 - **Failure or correction:** The Visualizer folder was not connected to GitHub, and uploading the complete folder would expose client plans and room images on a public page.
 - **System implication:** Add a checked GitHub upload step to every Zoe cycle. Use the public repository for shared Visualizer rules and tools. Keep client job folders private unless Chrissy clearly approves publishing them.
+- **Status:** Integrated
+
+### 2026-10-06 14:39 -04:00 — Barsano
+
+- **Learned:** The Barsano master bathroom is a new job. Chrissy wants Marble Systems MS90829 honed 4 x 4 mosaic on the main floor and shower floor, using the complete 16 x 16-inch sheet for scale. She wants Calacatta Amber honed 12 x 24 marble installed horizontally on all walls, a light wood vanity, and a white engineered-stone shower bench.
+- **Evidence:** Chrissy named the room, products, surfaces, sizes, wall direction, vanity finish, and bench material, then approved creation of the Barsano job folder.
+- **Failure or correction:** The bathroom layout was described as attached, but no layout image arrived with the message.
+- **System implication:** Keep product intake moving while waiting for a missing plan, but do not build the room or calculate material scale until the layout and measurements arrive.
+- **Status:** Integrated
+
+### 2026-10-06 14:48 -04:00 — Barsano
+
+- **Learned:** The Barsano master-bath plan is a one-page scan turned sideways. It shows a 13-foot by 10-foot room, a long double vanity on the left wall, a separate toilet room in the upper-right corner, and a shower with a bench in the lower-right corner.
+- **Evidence:** Chrissy attached `Barsano Mstr Bath.pdf`, and the complete page was rendered and visually checked after turning a temporary copy upright.
+- **Failure or correction:** The smaller shower and toilet-room measurements are readable but close together, so they need Chrissy's confirmation before they control the room image.
+- **System implication:** Preserve the unchanged PDF, show Chrissy the interpreted layout, and confirm the smaller measurements before making the four-wall map or plain room.
+- **Status:** Integrated
+
+### 2026-10-06 — Barsano
+
+- **Learned:** Chrissy confirmed the agent's reading of the Barsano master-bath layout and its visible measurements.
+- **Evidence:** Chrissy answered “correct” after reviewing the 13-by-10-foot room, left-wall double vanity, upper-right toilet room, lower-right shower, right-wall bench, and smaller compartment measurements.
+- **Failure or correction:** None.
+- **System implication:** This confirmed plan may now be used for the four-wall map and plain-room check.
+- **Status:** Integrated
+
+### 2026-10-06 — Barsano
+
+- **Learned:** The Barsano master bathroom has an 8-foot ceiling.
+- **Evidence:** Chrissy answered “8'” when asked for the ceiling height.
+- **Failure or correction:** None.
+- **System implication:** Use an 8-foot wall height for the plain room and wall-tile scale.
+- **Status:** Integrated
+
+### 2026-10-06 — Barsano
+
+- **Learned:** The first Barsano master-bath view should look straight into the room from the main entry door.
+- **Evidence:** Chrissy answered “yes” when asked to use the main-entry viewpoint.
+- **Failure or correction:** None.
+- **System implication:** Keep the vanity on the viewer's left and the toilet-room enclosure and shower on the viewer's right. Do not mirror the plan.
+- **Status:** Integrated
+
+### 2026-10-06 — Barsano
+
+- **Learned:** The Barsano shower should use clear frameless glass.
+- **Evidence:** Chrissy answered “yes” when asked about the shower glass.
+- **Failure or correction:** None.
+- **System implication:** Keep the shower visually open in the entry view and do not add a heavy metal frame.
+- **Status:** Integrated
+
+### 2026-10-06 — Barsano
+
+- **Learned:** The Barsano light-wood vanity should have a white engineered-stone top, matching the shower bench material.
+- **Evidence:** Chrissy answered “white engineered” when asked for the vanity countertop.
+- **Failure or correction:** None.
+- **System implication:** Use the same clean white engineered-stone appearance on the vanity top and shower bench.
+- **Status:** Integrated
+
+### 2026-10-06 — Barsano
+
+- **Learned:** The Barsano faucets, shower hardware, and cabinet handles should be brushed gold.
+- **Evidence:** Chrissy answered “brushed gold” when asked for the metal finish.
+- **Failure or correction:** None.
+- **System implication:** Keep all visible bathroom metal consistent in brushed gold unless Chrissy later names an exception.
+- **Status:** Integrated
+
+### 2026-10-06 — Barsano
+
+- **Learned:** The Barsano vanity should stand on the floor and use a modern light-wood design with clean flat doors and slim edge pulls.
+- **Evidence:** Chrissy said “stand on floor modern edge doors.”
+- **Failure or correction:** None.
+- **System implication:** Do not show a floating vanity, raised legs, shaker doors, or large face-mounted handles.
+- **Status:** Integrated
+
+### 2026-10-06 — Barsano
+
+- **Learned:** The Barsano double vanity should have two separate mirrors, one above each sink.
+- **Evidence:** Chrissy answered “2” when asked whether she wanted one large mirror or two separate mirrors.
+- **Failure or correction:** None.
+- **System implication:** Preserve two separate mirror positions in the plain room and finished view.
+- **Status:** Integrated
+
+### 2026-10-06 — Barsano
+
+- **Learned:** The two Barsano mirrors should be rectangular with brushed-gold frames.
+- **Evidence:** Chrissy answered “yes” to that mirror description.
+- **Failure or correction:** None.
+- **System implication:** Keep two separate rectangular gold-framed mirrors in the plain and finished views.
+- **Status:** Integrated
+
+### 2026-10-06 — Barsano
+
+- **Learned:** The Barsano bathroom entry door belongs on the wall between the vanity and shower. It must be visible where the first plain-room draft showed a solid wall.
+- **Evidence:** Chrissy said the entry door was incorrect and should be “along vanity and shower wall where you're showing a full wall.”
+- **Failure or correction:** The first draft placed the entry behind the camera because the plan's door location was interpreted incorrectly.
+- **System implication:** Do not describe the first camera as standing in that entry doorway. For this view, show the entry doorway between the vanity and shower, and use the corrected draft as the layout reference only after Chrissy approves it.
+- **Status:** Integrated
+
+### 2026-10-06 — Barsano
+
+- **Learned:** The first Barsano tiled draft enlarged the MS90829 floor pieces to roughly 12-inch squares even though the prompt named the 4-inch pieces and 16-inch sheet.
+- **Evidence:** The first draft showed only about one-third of the required floor-piece count across the 13-foot room.
+- **Failure or correction:** The floor was corrected by directly stating that every square needed to be one-third of its first-draft width and height, with 39 pieces across and 30 rows deep as checks.
+- **System implication:** For mosaic corrections, include both the true count and the needed change from the rejected draft. Do not treat a product name and sheet size alone as enough scale control.
+- **Status:** Integrated
+
+### 2026-10-06 — Barsano
+
+- **Learned:** Chrissy approved the Barsano master-bath view with the corrected 4-inch floor mosaic scale and horizontal 12 x 24-inch wall tile. She named it “Barsano Master Bath.”
+- **Evidence:** Chrissy said “save file as Barsano Master Bath.”
+- **Failure or correction:** The earlier floor scale and doorway placement were corrected before approval.
+- **System implication:** Use `Barsano/visualizations/barsano-master-bath.png` as the approved reference for later Barsano views. Do not use the rejected drafts.
+- **Status:** Integrated
+
+### 2026-10-06 — Barsano
+
+- **Learned:** For the Barsano kids bath, Chrissy chose Marble Systems MS01535 Skyline Monte mosaic for both the main floor and shower floor, and Telluride Snow 12 x 24 tile for all walls.
+- **Evidence:** Chrissy named both products and their uses in her kids-bath request.
+- **Failure or correction:** The supplied wall-tile link repeated the mosaic link. The exact Telluride Snow 12 x 24 product was found on the maker's official site instead of guessing from the duplicate link.
+- **System implication:** If a product link is duplicated or mismatched, verify the named product on the maker's site, save its exact official picture and facts, and clearly tell Chrissy what was corrected.
+- **Status:** Integrated
+
+### 2026-10-06 — Barsano
+
+- **Learned:** The Barsano kids bath should use a light wood vanity, white engineered-stone countertop and shower accessories, satin silver hardware, and a clear glass shower door.
+- **Evidence:** Chrissy supplied these finish choices after the plan review.
+- **Failure or correction:** None.
+- **System implication:** Keep these choices consistent in the plain room check and every finished kids-bath view.
+- **Status:** Integrated
+
+### 2026-10-06 — Barsano
+
+- **Learned:** The Barsano kids bath has an 8-foot ceiling.
+- **Evidence:** Chrissy answered “8'” when asked for the ceiling height.
+- **Failure or correction:** None.
+- **System implication:** Use an 8-foot ceiling in the plain room check and finished views.
+- **Status:** Integrated
+
+### 2026-10-06 — Barsano
+
+- **Learned:** The first Barsano kids-bath view should be from the main entry looking toward the vanity and shower.
+- **Evidence:** Chrissy answered “yes” when asked to confirm that camera position.
+- **Failure or correction:** None.
+- **System implication:** Use this camera for the plain room check and the first finished view so their layouts can be compared directly.
+- **Status:** Integrated
+
+### 2026-10-06 — Barsano
+
+- **Learned:** Chrissy approved the plain Barsano kids-bath layout and repeated that the hardware must be satin silver.
+- **Evidence:** Chrissy said “correct. use satin silver hardware.”
+- **Failure or correction:** None.
+- **System implication:** Use the approved plain view as the only room-layout reference for the finished view. Keep every visible metal finish satin silver.
+- **Status:** Integrated
+
+### 2026-10-06 — Barsano
+
+- **Learned:** The Barsano kids-bath Telluride Snow 12 x 24 wall tile should run horizontally.
+- **Evidence:** Chrissy answered “yes horizontal.”
+- **Failure or correction:** None.
+- **System implication:** Keep the 24-inch side running left to right on every tiled wall and maintain believable 12-inch-high rows.
+- **Status:** Integrated
+
+### 2026-10-06 — Barsano
+
+- **Learned:** Chrissy wants the MS01535 mosaic pictured as one complete square-foot sheet repeat.
+- **Evidence:** Chrissy corrected the first tiled view and said each sheet is one square foot.
+- **Failure or correction:** The first tiled view did not show the complete sheet at a clear one-square-foot scale.
+- **System implication:** For this room, use about 15 complete sheet repeats across the 15-foot width and 14 repeats along the 14-foot depth before cuts. Reject the first tiled draft.
+- **Status:** Integrated
+
+### 2026-10-06 — Barsano
+
+- **Learned:** Correct sheet size is not enough; the finished picture must preserve the exact MS01535 Monte design with orderly white angled bands and gray triangular inserts.
+- **Evidence:** Chrissy rejected the scale-corrected draft and pointed back to the official detailed sheet image.
+- **Failure or correction:** The second tiled view turned the product into a random small-piece mosaic instead of repeating the real sheet design.
+- **System implication:** Start the next attempt from the approved plain room, use the official sheet as the direct pattern reference, and explicitly forbid generic squares, diamonds, and random mosaic substitutions.
+- **Status:** Integrated
+
+### 2026-10-06 — Barsano
+
+- **Learned:** Even after the Monte design became recognizable, its individual pieces were still several times too large for a one-square-foot sheet.
+- **Evidence:** Chrissy said the scale was still incorrect.
+- **Failure or correction:** A written instruction to use 15 by 14 sheet repeats did not make the image maker reduce the pieces enough.
+- **System implication:** Use a direct change from the visible rejected draft: preserve the pattern but reduce each piece to about one-quarter of its current width and height. Check the visible motif count before asking Chrissy to approve it.
+- **Status:** Integrated
+
+### 2026-10-06 — Barsano
+
+- **Learned:** The Barsano kids-bath fixtures and hardware should be brushed chrome, replacing the earlier satin-silver choice.
+- **Evidence:** Chrissy asked to “change fixtures to chrome brushed.”
+- **Failure or correction:** Satin silver was the earlier choice and must no longer be used for this room.
+- **System implication:** Change every visible faucet, pull, shower fitting, hinge, handle, and door lever to brushed chrome while keeping all other approved details unchanged.
+- **Status:** Integrated
+
+### 2026-10-06 — Barsano
+
+- **Learned:** Both Barsano kids-bath mirror frames should also be brushed chrome.
+- **Evidence:** Chrissy said “change mirror trim too.”
+- **Failure or correction:** The earlier drafts kept warm wood-colored mirror frames after the fixtures changed to brushed chrome.
+- **System implication:** Match both mirror frames to the brushed-chrome fixtures in all later views.
+- **Status:** Integrated
+
+### 2026-10-06 — Barsano
+
+- **Learned:** Chrissy approved the Barsano kids-bath view with the small-scale MS01535 mosaic, horizontal Telluride Snow wall tile, light wood vanity, white engineered stone, clear shower glass, and brushed-chrome fixtures and mirror frames. She named it “Barsano Kids Bath.”
+- **Evidence:** Chrissy said “save as barsano kids bath.”
+- **Failure or correction:** Several earlier floor versions had the wrong mosaic design or scale and must not be reused.
+- **System implication:** Use `Barsano/visualizations/barsano-kids-bath.png` as the only approved image for later Barsano kids-bath revisions.
+- **Status:** Integrated
+
+### 2026-10-07 — test
+
+- **Learned:** Chrissy is also using the visualizer for exterior house mockups. For this brick ranch, she wants exactly three cedar columns, matching cedar woodwork, and a cupola with a weathervane over the left garage roof.
+- **Evidence:** Chrissy supplied one house photo, three style pictures, and these placement instructions.
+- **Failure or correction:** None yet.
+- **System implication:** Exterior work should keep the original house photo as the controlling shape and camera, use inspiration pictures only for style, count requested architectural features exactly, and place roof features on the named part of the house.
+- **Status:** Integrated
+
+### 2026-10-07 — test
+
+- **Learned:** For the ranch mockup, the new porch roof must fully include the front door. The original porch column must stay in its real location, and one or two added columns may be chosen for the best balance.
+- **Evidence:** Chrissy corrected the first mockup and gave permission to choose one or two added columns.
+- **Failure or correction:** The first new gable focused on the porch window and did not clearly include the front door or preserve the original column relationship.
+- **System implication:** Exterior edits must use the original photo to lock the position of existing supports and openings before adding new roofwork. The number of added supports may be chosen for balance only within Chrissy's stated range.
+- **Status:** Integrated
+
+### 2026-10-07 — Workspace-wide
+
+- **Learned:** Chrissy does not want an earlier AI-made visualization included as a reference image in a later generation. Every edit must be a new image request built from the unchanged original sources and the complete current design instructions.
+- **Evidence:** Chrissy explained that repeatedly feeding generated images back into the image maker can compound changes and reduce image quality.
+- **Failure or correction:** The earlier workflow told agents to reuse approved generated room views for consistency. That could carry forward altered details, wrong scale, soft edges, and other unwanted changes.
+- **System implication:** Keep an unchanged master source set and one complete written room spec. For every revision, resend the original photo or plan, original product and item images, and the full current spec. Earlier generated drafts may be viewed to understand feedback but must not be included as image references unless Chrissy clearly asks for a one-time exception. Explain that fresh generations may still vary and that exact local edits may need a photo-editing or measured three-dimensional room tool.
 - **Status:** Integrated

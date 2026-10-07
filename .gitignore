@@ -12,7 +12,9 @@ Desktop.ini
 .idea/
 
 # Client work stays off the public GitHub page unless Chrissy clearly approves it.
+/Barsano/
 /Dobitsch/
 /Esses/
 /test/
 /output/
+/tmp/
