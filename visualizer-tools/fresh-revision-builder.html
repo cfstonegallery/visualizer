@@ -56,12 +56,12 @@
 <body>
   <main>
     <h1>Fresh Revision Builder</h1>
-    <p class="intro">Use this before every visualization change. It makes a complete new request from the original sources. It does not use the last AI-made picture.</p>
+    <p class="intro">Use this before every visualization change. It makes a complete new request from the original sources and useful approved references. It keeps rejected true-room pictures out.</p>
 
     <div class="steps" aria-label="Three revision rules">
       <div class="step"><strong>1. Start clean</strong>Use the untouched plan, photograph, and product pictures.</div>
       <div class="step"><strong>2. Carry choices forward</strong>Write every approved detail, not only the newest change.</div>
-      <div class="step"><strong>3. Make a fresh picture</strong>Keep earlier AI-made drafts out of the image request.</div>
+      <div class="step"><strong>3. Make a new picture</strong>Keep rejected true-room drafts out of the image request.</div>
     </div>
 
     <section class="panel">
@@ -82,7 +82,7 @@
         <label class="full">Original plan or photograph names <span class="small">one per line</span>
           <textarea id="originalSources" placeholder="IMG_5417.jpeg&#10;original floor plan.pdf"></textarea>
         </label>
-        <label class="full">Original product, material, fixture, or style pictures <span class="small">one per line</span>
+        <label class="full">Product, material, fixture, style, or approved room references <span class="small">one per line</span>
           <textarea id="appearanceSources" placeholder="cedar porch reference.png&#10;tile maker sheet.jpg"></textarea>
         </label>
       </div>
@@ -99,7 +99,7 @@
         </label>
         <label class="check full">
           <input id="noAiReference" type="checkbox">
-          <span>I checked the image list. No earlier AI-made visualization will be sent as a reference.</span>
+          <span>I checked the image list. No rejected true-room visualization will be sent as a reference.</span>
         </label>
       </div>
       <div class="buttons">

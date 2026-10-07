@@ -49,7 +49,7 @@ The Visualizer workspace contains shared instructions and separate client job fo
 - `ROOM_LAYOUT_AND_SCALE_CHECK.md` — required four-wall map and material scale check used before room generation.
 - `GITHUB_PUBLISHING_CHECK.md` — plain-language check used before anything is uploaded to the public GitHub repository.
 - `visualizer-tools/material-scale-check.html` — simple browser tool that turns room and full-sheet measurements into exact sheet counts, a picture-scale preview, and words for the image maker.
-- `visualizer-tools/fresh-revision-builder.html` — simple browser tool that prepares a complete new image request from original sources and blocks reuse of an earlier AI-made visualization.
+- `visualizer-tools/fresh-revision-builder.html` — simple browser tool that prepares a complete new image request from original and approved references while blocking rejected true-room visualizations.
 
 Keep these three special workspace files in uppercase exactly as shown.
 
@@ -121,9 +121,9 @@ When Chrissy asks to turn an approved plan into a real-looking room, follow `ROO
 - Before the plain room check, make a four-wall map using the chosen camera: near wall, opposite wall, left wall, and right wall. Record what touches each wall, which way it faces, and what the doorway lines up with.
 - Do not rely on an overhead plan alone. Collect the needed heights, item details, materials, furniture sizes, and camera direction.
 - Make a plain room check first. Confirm room shape, scale, cabinets, furniture, openings, and camera view before adding finishes.
-- Build every room image and revision from the unchanged original photo or plan, original product and item pictures, and one complete written room spec containing all approved choices and corrections. Label what each source controls.
-- Create each requested room view separately from the same master sources and current written room spec.
-- Do not include an earlier AI-made room image as a reference for a later generation unless Chrissy clearly asks for a one-time exception. Earlier drafts may be reviewed to understand her corrections, but they must not be sent back to the image maker.
+- Build every room image and revision from the unchanged original photo or plan, original product and item pictures, useful approved reference images, and one complete written room spec containing all approved choices and corrections. Label what each source controls.
+- Create each requested room view as a new image call using the full current reference set and written room spec.
+- Never include a rejected true-room visualization as a reference for the next attempt. Approved room visualizations may be used when they help preserve an accepted layout, camera, or design. Original plans, photographs, swatches, product pictures, fixture pictures, and style pictures remain important references.
 - If all relevant references cannot be included, tell Chrissy instead of silently leaving some out.
 - Multiple references help consistency but do not guarantee accuracy. Review every result with Chrissy.
 - Before adding a repeating material, follow `ROOM_LAYOUT_AND_SCALE_CHECK.md`. Identify whether each reference shows one tile, several tiles, or one full sheet. For mosaics, use the full maker sheet first, keep its exact decimal repeat count and direction, and use the individual-piece count only as a second check. Use `visualizer-tools/material-scale-check.html` for this calculation.
@@ -209,7 +209,7 @@ Read `handoff-project-overview.md` before revising an existing Dobitsch image. T
 
 ### Current build state
 
-The workspace currently contains organized plans, swatches, saved room images, handoffs, learning notes, Zoe records, a living tile dictionary, a living workflow draft, a product-link intake template, a clean-plan workflow, a room-spec workflow, a room-layout-and-scale check, a repeating-material scale helper, and a fresh-revision helper that keeps earlier AI-made visualizations out of later image requests. The shared system files are connected to Chrissy's public Visualizer GitHub repository. Client job folders remain private unless Chrissy clearly approves public sharing. The workspace does not yet contain the complete lightweight visualizer. The next agent must still help Chrissy finish defining the workflow for IT, as explained below.
+The workspace currently contains organized plans, swatches, saved room images, handoffs, learning notes, Zoe records, a living tile dictionary, a living workflow draft, a product-link intake template, a clean-plan workflow, a room-spec workflow, a room-layout-and-scale check, a repeating-material scale helper, and a fresh-revision helper that keeps rejected true-room visualizations out of later image requests while preserving useful approved references. The shared system files are connected to Chrissy's public Visualizer GitHub repository. Client job folders remain private unless Chrissy clearly approves public sharing. The workspace does not yet contain the complete lightweight visualizer. The next agent must still help Chrissy finish defining the workflow for IT, as explained below.
 
 ## First assignment for the next agent
 

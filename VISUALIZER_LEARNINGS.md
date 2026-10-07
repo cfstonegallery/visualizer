@@ -988,8 +988,8 @@ This workspace-level ledger records what Chrissy's real work teaches the agents 
 
 ### 2026-10-07 — Workspace-wide
 
-- **Learned:** Chrissy does not want an earlier AI-made visualization included as a reference image in a later generation. Every edit must be a new image request built from the unchanged original sources and the complete current design instructions.
-- **Evidence:** Chrissy explained that repeatedly feeding generated images back into the image maker can compound changes and reduce image quality.
-- **Failure or correction:** The earlier workflow told agents to reuse approved generated room views for consistency. That could carry forward altered details, wrong scale, soft edges, and other unwanted changes.
-- **System implication:** Keep an unchanged master source set and one complete written room spec. For every revision, resend the original photo or plan, original product and item images, and the full current spec. Earlier generated drafts may be viewed to understand feedback but must not be included as image references unless Chrissy clearly asks for a one-time exception. Explain that fresh generations may still vary and that exact local edits may need a photo-editing or measured three-dimensional room tool.
+- **Learned:** Every visualization correction should be a new image call, but Chrissy's exclusion applies only to true-room visualizations that she rejected. Original plans, photographs, swatches, product pictures, style pictures, and useful approved room visualizations still belong in the reference set.
+- **Evidence:** Chrissy first raised the risk of compounding changes and then clarified, “this only applies to using true room visualizations that I reject as reference images.”
+- **Failure or correction:** The agent first made the rule too broad and removed all earlier AI-made room images, including approved views that may be needed for consistency.
+- **System implication:** Keep using the full set of relevant original and approved references. Make each correction as a new image call, but never attach a rejected true-room visualization to the next request. The request builder must block rejected true-room drafts rather than block every generated picture.
 - **Status:** Integrated

@@ -22,14 +22,14 @@ Last updated: 2026-10-07
 14. Treat a cleaned plan as a planning picture, not a construction, ordering, or installation drawing, unless reliable measurements and details have been checked.
 15. After a clean plan is approved, ask Chrissy the missing room questions one at a time before generating a real-looking room.
 16. Make and approve a plain room check before adding materials and decoration.
-17. Build every new room image and revision from the unchanged original photo or plan, the original product and item pictures, and a complete written list of approved choices and corrections.
-18. Do not include an earlier AI-made room image as a reference for a later generation unless Chrissy clearly asks for a one-time exception. Create each view separately from the same master sources and written room spec.
+17. Build every new room image and revision from the unchanged original photo or plan, original product and item pictures, useful approved reference images, and a complete written list of approved choices and corrections.
+18. Create each view as a new image call. Never include a rejected true-room visualization as a reference. Approved room visualizations may be included when they help preserve an accepted layout, camera, or design.
 19. Before making the plain room, use a four-wall map that records what touches each wall, which way it faces, and what the doorway lines up with.
 20. Before adding tile or mosaic, identify whether the flat reference shows one tile, several tiles, or a complete sheet.
 21. Check material scale with the known room: expected tiles across, rows high, full sheets across, and tiles in one pattern repeat.
 22. When Chrissy says to stop the questions and show the image, make a review draft once the room, camera, main materials, and important sizes are known. Use simple temporary choices for minor unanswered details.
 23. For mosaic scale, use the exact full maker sheet first. Record its direction and exact decimal repeats across and through the surface. Use the small-piece count only as a second check.
-24. If Chrissy later rejects the scale in a saved image, correct the written room spec and rebuild from the original maker sheet. Do not send the saved AI-made image back as a scale reference.
+24. If Chrissy later rejects the scale in a saved image, correct the written room spec and use the original maker sheet for scale. Do not send the scale-rejected room visualization back as a reference.
 25. After a completed Zoe cycle is checked, save and upload its shared Visualizer changes to the connected GitHub repository.
 26. Keep client job folders and their plans, images, swatches, and handoffs off a public GitHub page unless Chrissy clearly approves public sharing of those client materials.
 
@@ -114,12 +114,12 @@ Follow `ROOM_SPEC_WORKFLOW.md` after Chrissy approves a clean plan and asks for 
 - Build a plain room check before adding finishes.
 - Have Chrissy confirm the room shape, scale, placement, camera view, and visible items.
 - Apply materials and style only after that approval.
-- For each room view, include every relevant original plan, original room photo, non-generated wall view, material image, and item reference that the image maker can accept.
+- For each room view, include every relevant original plan, original room photo, approved clean plan, approved room view, material image, and item reference that the image maker can accept.
 - Label which reference controls layout, height, camera, or appearance.
 - Keep one complete written room spec containing every approved choice and correction.
-- Create every revision and every view as a fresh request from the same master sources and current written room spec.
-- Do not include earlier AI-made room images as references unless Chrissy clearly asks for a one-time exception.
-- Use `visualizer-tools/fresh-revision-builder.html` to prepare the request and stop it when an earlier AI-made visualization is still in the source list.
+- Create every revision and every view as a new image call from the current reference set and written room spec.
+- Never include a rejected true-room visualization as a reference. Keep using original and approved reference images when they help.
+- Use `visualizer-tools/fresh-revision-builder.html` to prepare the request and stop it when a rejected true-room visualization is still in the source list.
 - If an input limit prevents all relevant references from being included, tell Chrissy before generating.
 
 ### Draft review

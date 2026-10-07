@@ -30,16 +30,16 @@
       throw new Error("Describe what should change in this new draft.");
     }
     if (!values.noAiReference) {
-      throw new Error("Check the box confirming that no earlier AI-made visualization will be used as a reference.");
+      throw new Error("Check the box confirming that no rejected true-room visualization will be used as a reference.");
     }
 
     const parts = [
-      "Create a brand-new visualization from the original sources listed below. Do not use, trace, or imitate any earlier AI-made visualization.",
+      "Create a brand-new visualization using the original sources and approved references listed below. Do not use, trace, or imitate any true-room visualization that Chrissy rejected.",
       room ? `Job and room:\n${room}` : "",
       camera ? `Camera:\n${camera}` : "",
       `Untouched original plan or photograph sources:\n${bulletList(originalSources)}`,
       appearanceSources.length > 0
-        ? `Original product, material, fixture, or style sources:\n${bulletList(appearanceSources)}`
+        ? `Product, material, fixture, style, or approved room references:\n${bulletList(appearanceSources)}`
         : "",
       `Complete current room description:\n${fullSpec}`,
       `Change required in this new draft:\n${change}`,

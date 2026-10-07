@@ -43,24 +43,25 @@ Before generating, follow the wall-map part of `ROOM_LAYOUT_AND_SCALE_CHECK.md`.
 
 Do this even when the plan is rotated. Do not replace the wall map with changing left-and-right descriptions.
 
-## Step 3: Build the master source set
+## Step 3: Build the reference set
 
-Use every relevant original or non-generated source for that room whenever the image maker can accept it.
+Use every relevant original source and approved reference image for that room whenever the image maker can accept it.
 
-Do not send an earlier AI-made room image back to the image maker for a revision. Each revision must be a fresh image request built from the unchanged original photo or plan, the original material and item pictures, and one complete written list of all approved room choices and corrections. Earlier generated drafts may be reviewed by the agent to understand Chrissy's comments, but they must not be included as reference images unless Chrissy clearly asks for a one-time exception.
+Every revision must be a new image call built from the unchanged original photo or plan, the original material and item pictures, useful approved references, and one complete written list of all approved room choices and corrections. Never include a true-room visualization that Chrissy rejected. An approved room visualization may be included when it helps preserve an accepted layout, camera, or design.
 
 Clearly label the purpose of each reference:
 
-- Approved clean plan made without image generation: controls the overhead layout. If the clean plan was AI-made, use the original plan and carry its approved corrections into the written room spec instead.
+- Approved clean plan: controls the overhead layout.
 - Original plan: helps check that the cleaned plan did not lose information.
 - Flat wall view: controls cabinet, opening, and fixture heights on that wall.
 - Camera view or arrow: controls where the viewer stands and looks.
+- Approved room view: controls an accepted layout, camera, or design when consistency is needed.
 - Product or material image: controls color, pattern, finish, and scale.
 - Furniture, appliance, or fixture image: controls the appearance of that item.
 
-For a revision, write the full desired result again. Do not send only the newest correction. The written room spec must carry forward every approved decision so the image can be rebuilt from the master sources without relying on the last generated picture.
+For a revision, write the full desired result again. Do not send only the newest correction. The written room spec must carry forward every approved decision so the new image call does not depend on a rejected draft.
 
-Use `visualizer-tools/fresh-revision-builder.html` to check the source list and prepare the complete request. The tool must not produce the request until the agent confirms that no earlier AI-made visualization is included.
+Use `visualizer-tools/fresh-revision-builder.html` to check the source list and prepare the complete request. The tool must not produce the request until the agent confirms that no rejected true-room visualization is included.
 
 If the image maker cannot accept every relevant approved reference in one request, do not silently leave images out. Tell Chrissy what cannot be included and use a clearly labeled combined reference sheet or another agreed method.
 
@@ -93,7 +94,7 @@ Correct the room shape and placement before adding finishes.
 
 ## Step 6: Check material scale and apply finishes
 
-After Chrissy approves the plain room, record its approved layout in the written room spec. Add the confirmed cabinets, counters, backsplash, flooring, wall finishes, furniture, lighting, hardware, and decoration in a fresh image request from the master sources. Do not use the generated plain-room picture as a reference image.
+After Chrissy approves the plain room, record its approved layout in the written room spec. Add the confirmed cabinets, counters, backsplash, flooring, wall finishes, furniture, lighting, hardware, and decoration in a new image call. The approved plain-room picture may be included as a layout reference. A rejected plain-room picture may not be included.
 
 Material images control appearance. Confirmed room measurements control scale.
 
@@ -108,24 +109,25 @@ Before generating, follow `ROOM_LAYOUT_AND_SCALE_CHECK.md`:
 - Use `visualizer-tools/material-scale-check.html` to prepare the sheet counts and plain-language image instructions.
 - Put these expected counts into the image instructions.
 
-If Chrissy later finds a scale problem in a saved image, correct the written room spec and rebuild from the master sources and maker sheet. Have Chrissy review the new image before replacing the saved one.
+If Chrissy later finds a scale problem in a saved image, correct the written room spec and use the original maker sheet for scale. Do not include the scale-rejected room visualization as a reference. Have Chrissy review the new image before replacing the saved one.
 
 ## Step 7: Make more room views
 
 Create each requested room view separately. For every new view:
 
 - Send the same approved clean plan and room spec.
+- Send every relevant approved room view from the same room when it helps preserve an accepted result.
 - Send the same material, furniture, appliance, and fixture references.
 - State the new camera position and direction.
 - Require the room layout, cabinet count, furniture count, materials, and proportions to remain consistent.
 
-Do not send an earlier generated room view as a reference for a later view. Use the master sources and the same complete written room spec for every camera view. A rejected draft may explain what failed, but it must not guide the next image request.
+Never send a rejected true-room visualization as a reference for a later view or correction. Use original sources, useful approved references, and the same complete written room spec for every camera view. A rejected draft may explain what failed to the agent, but it must not be sent to the image maker.
 
 ## Step 8: Save after approval
 
 Show each view separately. Ask whether that exact view is worth saving and what filename Chrissy wants.
 
-Record the approved view, its camera position, the master sources used, and the full approved written room spec in the room handoff.
+Record the approved view, its camera position, the references used, and the full approved written room spec in the room handoff.
 
 ## Image-maker direction
 
@@ -133,10 +135,11 @@ Every real-looking room request should say, in plain language:
 
 - Which image controls the layout.
 - Which images control heights and positions.
+- Which approved room images control consistency.
 - Which images control appearance only.
 - Where the camera stands and faces.
 - What must remain unchanged.
 - No mirroring, redesigning, moving, adding, or removing unless Chrissy asked.
 - Which details are still uncertain.
 
-Original references and a complete written spec reduce accumulated changes, but they do not guarantee that separate generations will match perfectly. Every result still needs Chrissy's review. When an exact local change or exact pixel-for-pixel match is required, explain that a photo-editing or measured three-dimensional room tool may be more reliable than image generation.
+Original sources, approved references, and a complete written spec improve consistency, but they do not guarantee that separate generations will match perfectly. Every result still needs Chrissy's review. Rejected true-room visualizations must never be fed into the next image request. When an exact local change or exact pixel-for-pixel match is required, explain that a photo-editing or measured three-dimensional room tool may be more reliable than image generation.
