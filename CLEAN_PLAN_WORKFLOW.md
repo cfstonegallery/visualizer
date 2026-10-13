@@ -77,8 +77,8 @@ Do not use it by itself to order materials, set installation measurements, or di
 
 ## Fisher example
 
-The Test job proved this flow:
+The job now named Misc proved this flow:
 
-- Original: `test/floor-plans/fisher-kitchen-source-plan.png`
-- Approved clean plan: `test/visualizations/fisher.png`
+- Original: `Misc/floor-plans/fisher-kitchen-source-plan.png`
+- Approved clean plan: `Misc/visualizations/fisher.png`
 - Important correction: the first draft removed the sitting area; the approved draft restored the round table and chairs.

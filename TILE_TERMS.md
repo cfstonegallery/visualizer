@@ -6,7 +6,18 @@ This file is a living guide. Each future Zoe cycle must read it and add or corre
 
 The pictures produced by the visualizer are design aids. Product instructions, the tile installer, and current trade standards control the real installation.
 
-Last updated: 2026-09-24
+Last updated: 2026-10-13
+
+## Drawing and room-shape terms
+
+| Term | Plain-language meaning |
+|---|---|
+| **Overhead floor plan** | A room drawing seen from above. It controls the floor outline and where walls, openings, cabinets, and fixtures sit. It does not by itself show wall or ceiling heights. |
+| **Wall elevation** | A flat, front-facing drawing of one wall. It controls widths, heights, openings, and items on that wall. It is not a floor outline. |
+| **Wall-and-ceiling profile** | A front-facing outline showing the shape of one wall and its ceiling above. It may include a high side, flat ceiling section, slope, and low side. Those heights and ceiling lengths must not be treated as floor depth. |
+| **Sloped ceiling** | A ceiling section that rises or falls instead of staying flat. Record its length, which side is high, which side is low, and both confirmed wall heights. |
+| **Raised base** | A platform under cabinets, racks, or another built-in part. Its shape and location can be confirmed before its finished material is chosen. |
+| **Partial view** | Only part of a wall, window, cabinet, or nearby area should appear in the picture. The room description should say where it begins and where the camera cuts it off. |
 
 ## The terms Chrissy asked about
 

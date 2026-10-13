@@ -4,9 +4,31 @@ Use this check before making a plain room image and again before adding tile or 
 
 ## Why this check exists
 
-A floor plan can be rotated, faint, or easy to read backward. A product picture can show one tile, several tiles, or one full mosaic sheet. This check turns those pictures into simple facts before they are sent to the image maker.
+A source drawing can be an overhead plan, a front-facing wall view, or a wall-and-ceiling profile. A floor plan can also be rotated, faint, or easy to read backward. A product picture can show one tile, several tiles, or one full mosaic sheet. This check turns those pictures into simple facts before they are sent to the image maker.
 
-## Part 1: Make a four-wall map
+## Part 1: Identify the drawing and each measurement
+
+For every source drawing, choose one:
+
+- Overhead floor plan.
+- Front-facing wall view.
+- Wall-and-ceiling profile.
+- Room photograph.
+- Unsure and needing Chrissy's confirmation.
+
+Label each measurement as width, depth, height, opening, flat ceiling, or slope. Do not use a wall height, ceiling length, or sloped line as room depth.
+
+For a wall-and-ceiling profile, record:
+
+- Overall wall width.
+- High-side wall height.
+- Flat ceiling length.
+- Sloped ceiling length and direction.
+- Low-side wall height.
+
+Use `visualizer-tools/drawing-type-check.html` to prepare the checked description.
+
+## Part 2: Make a four-wall map
 
 Name the walls from the chosen camera view:
 
@@ -22,11 +44,15 @@ For every door, window, cabinet, fixture, and piece of furniture, record:
 - Which way it faces.
 - Whether it should be fully visible, partly visible, or hidden from the chosen camera.
 
+For glass walls or doors, also record what appears just outside or through the glass. Name any nearby sheetrock, doorway, window, or adjoining room and say whether it should be full, partial, or hidden.
+
+Record raised bases and other unfinished parts separately. Preserve their size and position, use a plain placeholder when needed, and do not invent their finished material.
+
 Also record what the doorway or camera lines up with. Do not rely only on words such as “left” and “right” when the plan is rotated.
 
 Ask Chrissy to approve the four-wall map when the plan can be read more than one way.
 
-## Part 2: Identify the exact product picture
+## Part 3: Identify the exact product picture
 
 Before using a material picture, decide what the picture shows:
 
@@ -39,7 +65,7 @@ Record the maker, collection, color, exact item number, individual piece size, f
 
 When a collection contains several products with similar names, do not choose from the color or shape name alone. Match the exact item number and flat product picture.
 
-## Part 3: Do the scale check
+## Part 4: Do the scale check
 
 Use the real surface measurement and the named product size.
 
@@ -59,7 +85,7 @@ Write the expected counts into the image instructions. Examples:
 - An 84-inch floor using 12 x 12-inch mosaic sheets shows about seven full sheets across.
 - A 48 x 36-inch shower using a wider-than-deep 11 x 12 1/2-inch sheet shows about 3.84 sheet widths across when the 12 1/2-inch side runs across the shower, and 3.27 sheet depths when the 11-inch side runs front to back. If the sheet shows about 12 pieces across and 12 rows deep, the second check is about 46 pieces across and 39 rows deep before edge cuts and camera perspective.
 
-## Part 4: Review the result
+## Part 5: Review the result
 
 Check these separately:
 

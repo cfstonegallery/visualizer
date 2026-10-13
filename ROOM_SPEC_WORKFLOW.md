@@ -31,7 +31,23 @@ Record anything unknown. Never silently invent a missing measurement or item pos
 
 If Chrissy says to stop the questions and show the room, proceed once the room, camera, main materials, and important sizes are known. Use simple temporary choices for minor unanswered details and list those choices when the draft is shown.
 
-## Step 2: Make the four-wall map
+## Step 2: Identify every drawing
+
+Before using a measurement, state what the source drawing shows:
+
+- Overhead floor plan.
+- Front-facing wall view.
+- Wall-and-ceiling profile.
+- Room photograph.
+- Unsure and still needing Chrissy's confirmation.
+
+Label every measurement as width, depth, height, opening, flat ceiling, or slope. Never turn a wall height or sloped-ceiling length into floor depth.
+
+For a wall-and-ceiling profile, record the overall wall width, high-side height, flat ceiling length, sloped ceiling length and direction, and low-side height. Use `visualizer-tools/drawing-type-check.html` to prepare this description.
+
+Also record what is visible just outside the room or through glass. State whether nearby sheetrock, doors, windows, or adjoining spaces should be fully visible, partly visible, or hidden. If a raised base or another part is shown but its finish is not chosen, preserve its shape with a plain placeholder and do not invent a material.
+
+## Step 3: Make the four-wall map
 
 Before generating, follow the wall-map part of `ROOM_LAYOUT_AND_SCALE_CHECK.md`.
 
@@ -43,7 +59,7 @@ Before generating, follow the wall-map part of `ROOM_LAYOUT_AND_SCALE_CHECK.md`.
 
 Do this even when the plan is rotated. Do not replace the wall map with changing left-and-right descriptions.
 
-## Step 3: Build the reference set
+## Step 4: Build the reference set
 
 Use every relevant original source and approved reference image for that room whenever the image maker can accept it.
 
@@ -67,7 +83,7 @@ If the image maker cannot accept every relevant approved reference in one reques
 
 For each material reference, state whether it shows one tile, several tiles, one full mosaic sheet, or an installed room. When a flat image contains several tiles or one full sheet, state that clearly so the image maker does not treat the whole picture as one tile.
 
-## Step 4: Make a plain room check
+## Step 5: Make a plain room check
 
 First generate a simple room with:
 
@@ -79,7 +95,7 @@ First generate a simple room with:
 
 The goal is to check room shape, scale, cabinet placement, furniture placement, doors, windows, and what should be visible. Do not let finishes or decoration hide layout errors.
 
-## Step 5: Review the plain room
+## Step 6: Review the plain room
 
 Check with Chrissy:
 
@@ -88,11 +104,14 @@ Check with Chrissy:
 - No left-and-right reversal or mirrored layout.
 - Correct wall, cabinet, island, appliance, fixture, and furniture positions.
 - Correct visible and hidden items.
+- Correct ceiling shape, including every flat and sloped section.
+- Correct nearby areas visible through or beside glass.
+- Correct shape and location of any raised base or unfinished part, without an invented finish.
 - Believable heights and walking space.
 
 Correct the room shape and placement before adding finishes.
 
-## Step 6: Check material scale and apply finishes
+## Step 7: Check material scale and apply finishes
 
 After Chrissy approves the plain room, record its approved layout in the written room spec. Add the confirmed cabinets, counters, backsplash, flooring, wall finishes, furniture, lighting, hardware, and decoration in a new image call. The approved plain-room picture may be included as a layout reference. A rejected plain-room picture may not be included.
 
@@ -111,7 +130,7 @@ Before generating, follow `ROOM_LAYOUT_AND_SCALE_CHECK.md`:
 
 If Chrissy later finds a scale problem in a saved image, correct the written room spec and use the original maker sheet for scale. Do not include the scale-rejected room visualization as a reference. Have Chrissy review the new image before replacing the saved one.
 
-## Step 7: Make more room views
+## Step 8: Make more room views
 
 Create each requested room view separately. For every new view:
 
@@ -123,7 +142,7 @@ Create each requested room view separately. For every new view:
 
 Never send a rejected true-room visualization as a reference for a later view or correction. Use original sources, useful approved references, and the same complete written room spec for every camera view. A rejected draft may explain what failed to the agent, but it must not be sent to the image maker.
 
-## Step 8: Save after approval
+## Step 9: Save after approval
 
 Show each view separately. Ask whether that exact view is worth saving and what filename Chrissy wants.
 

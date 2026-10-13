@@ -12,9 +12,9 @@ Use this check before the Visualizer workspace is sent to GitHub for the first t
 
 ## Public-content choice for the first upload
 
-The workspace contains client-named floor plans, product images, room visualizations, and handoff notes in `Dobitsch` and `test`.
+The workspace contains client-named floor plans, product images, room visualizations, and handoff notes in `Dobitsch` and `Misc`.
 
-The first upload will include only the shared Visualizer system files and tools. The folders `Dobitsch`, `Esses`, `test`, and `output` stay private unless Chrissy clearly approves public sharing of client work.
+The first upload will include only the shared Visualizer system files and tools. The folders `Dobitsch`, `Esses`, `Misc`, and `output` stay private unless Chrissy clearly approves public sharing of client work.
 
 A public repository can be viewed and downloaded by anyone.
 

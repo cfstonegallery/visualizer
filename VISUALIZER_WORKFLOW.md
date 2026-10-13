@@ -2,7 +2,7 @@
 
 This file holds the safe steps Chrissy has already decided. It is not the final IT plan. The larger workflow is still being discussed with Chrissy.
 
-Last updated: 2026-10-07
+Last updated: 2026-10-13
 
 ## Chrissy's workflow decisions
 
@@ -27,11 +27,14 @@ Last updated: 2026-10-07
 19. Before making the plain room, use a four-wall map that records what touches each wall, which way it faces, and what the doorway lines up with.
 20. Before adding tile or mosaic, identify whether the flat reference shows one tile, several tiles, or a complete sheet.
 21. Check material scale with the known room: expected tiles across, rows high, full sheets across, and tiles in one pattern repeat.
-22. When Chrissy says to stop the questions and show the image, make a review draft once the room, camera, main materials, and important sizes are known. Use simple temporary choices for minor unanswered details.
-23. For mosaic scale, use the exact full maker sheet first. Record its direction and exact decimal repeats across and through the surface. Use the small-piece count only as a second check.
-24. If Chrissy later rejects the scale in a saved image, correct the written room spec and use the original maker sheet for scale. Do not send the scale-rejected room visualization back as a reference.
-25. After a completed Zoe cycle is checked, save and upload its shared Visualizer changes to the connected GitHub repository.
-26. Keep client job folders and their plans, images, swatches, and handoffs off a public GitHub page unless Chrissy clearly approves public sharing of those client materials.
+22. Identify every drawing before using it. Keep overhead floor measurements separate from front-facing wall heights and sloped-ceiling measurements.
+23. Record what is visible through or beside glass, including partial walls and windows.
+24. Preserve the shape and position of a raised base or other unfinished part without inventing its material.
+25. When Chrissy says to stop the questions and show the image, make a review draft once the room, camera, main materials, and important sizes are known. Use simple temporary choices for minor unanswered details.
+26. For mosaic scale, use the exact full maker sheet first. Record its direction and exact decimal repeats across and through the surface. Use the small-piece count only as a second check.
+27. If Chrissy later rejects the scale in a saved image, correct the written room spec and use the original maker sheet for scale. Do not send the scale-rejected room visualization back as a reference.
+28. After a completed Zoe cycle is checked, save and upload its shared Visualizer changes to the connected GitHub repository.
+29. Keep client job folders and their plans, images, swatches, and handoffs off a public GitHub page unless Chrissy clearly approves public sharing of those client materials.
 
 ## IT implementation requirements
 
@@ -66,6 +69,8 @@ Ask for these items in short steps:
 ### Four-wall map and scale check
 
 Follow `ROOM_LAYOUT_AND_SCALE_CHECK.md` before image making.
+
+First use `visualizer-tools/drawing-type-check.html` when a source might be a wall view, wall-and-ceiling profile, or overhead plan. The finished note must say what each measurement controls.
 
 - Map the near, opposite, left, and right walls from the chosen camera.
 - Record each item's wall, position, facing direction, and visibility.
@@ -187,7 +192,7 @@ When Chrissy says Zoe:
 After a Zoe cycle is checked:
 
 - Review the exact files waiting to be uploaded.
-- Keep `Dobitsch`, `Esses`, `test`, and `output` out of the public upload unless Chrissy clearly approves them.
+- Keep `Dobitsch`, `Esses`, `Misc`, and `output` out of the public upload unless Chrissy clearly approves them.
 - Save the shared system changes with a short description of what Zoe changed.
 - Upload them to `https://github.com/cfstonegallery/visualizer`.
 - Never ask Chrissy to put her password or login code in chat. Use the safe GitHub sign-in window on her computer.

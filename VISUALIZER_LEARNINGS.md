@@ -627,7 +627,7 @@ This workspace-level ledger records what Chrissy's real work teaches the agents 
 - **Learned:** Chrissy approved the corrected LSI basketweave bathroom image and named it “LSI Basketweave fl w/subway walls.”
 - **Evidence:** Chrissy asked to save the image using that name.
 - **Failure or correction:** None during the save step. The approved image follows earlier corrections to the 12 x 12-inch basketweave sheet scale and layout.
-- **System implication:** Use `test/visualizations/lsi-basketweave-fl-subway-walls.png` as the approved basketweave reference for later LSI bathroom work.
+- **System implication:** Use `Misc/visualizations/lsi-basketweave-fl-subway-walls.png` as the approved basketweave reference for later LSI bathroom work.
 - **Status:** Integrated
 
 ### 2026-09-24 12:18 -04:00 — Test
@@ -635,7 +635,7 @@ This workspace-level ledger records what Chrissy's real work teaches the agents 
 - **Learned:** Chrissy approved the LSI image with Happy Floors Soft Light Grey 12 x 24 main floor, white 3 x 6 subway shower walls, Belworth Murbo penny-round shower floor, Frost grout, and a gray vanity with white top. She named it “LSI Soft Grey w/subway and penny rounds.”
 - **Evidence:** Chrissy asked to save the shown image using that name.
 - **Failure or correction:** None during the save step.
-- **System implication:** The finish choice remains approved, but its shower-floor scale was later rejected. The stored file is `test/visualizations/LSI Soft Grey wMurbo PR.png`; do not use it as an approved scale reference until the newest full-sheet correction is approved.
+- **System implication:** The finish choice remains approved, but its shower-floor scale was later rejected. The stored file is `Misc/visualizations/LSI Soft Grey wMurbo PR.png`; do not use it as an approved scale reference until the newest full-sheet correction is approved.
 - **Status:** Integrated
 
 ### 2026-09-24 12:08 -04:00 — Test
@@ -683,7 +683,7 @@ This workspace-level ledger records what Chrissy's real work teaches the agents 
 - **Learned:** Chrissy approved the LSI image with Roca White and Gray Basket Weave, glossy white subway walls, MAPEI Frost grout, and the gray vanity with white top. She named it “LSI B/W and subway with frost grout.”
 - **Evidence:** Chrissy asked to save the image using that name.
 - **Failure or correction:** None during the save step.
-- **System implication:** Use `test/visualizations/LSI - BW & subway - grey grout.png` as the approved Roca-and-Frost reference for later LSI bathroom work. Its current stored name predates or departs from the lowercase-and-hyphens rule and should not be changed without Chrissy's approval.
+- **System implication:** Use `Misc/visualizations/LSI - BW & subway - grey grout.png` as the approved Roca-and-Frost reference for later LSI bathroom work. Its current stored name predates or departs from the lowercase-and-hyphens rule and should not be changed without Chrissy's approval.
 - **Status:** Integrated
 
 ### 2026-09-24 12:17 -04:00 — Test
@@ -751,7 +751,7 @@ This workspace-level ledger records what Chrissy's real work teaches the agents 
 - **Learned:** Chrissy approved the LSI Murbo correction based on the official 1-inch round and 11 x 12 1/2-inch sheet information.
 - **Evidence:** After seeing the updated image, Chrissy said “update,” authorizing replacement of the saved image.
 - **Failure or correction:** Earlier saved versions used the wrong visible scale or the rectangular sheet in the wrong direction.
-- **System implication:** Use `test/visualizations/LSI Soft Grey wMurbo PR.png` as the current approved view. Its shower-floor scale uses 3.84 sheet widths across and 3.27 sheet depths.
+- **System implication:** Use `Misc/visualizations/LSI Soft Grey wMurbo PR.png` as the current approved view. Its shower-floor scale uses 3.84 sheet widths across and 3.27 sheet depths.
 - **Status:** Integrated
 
 ### 2026-10-02 14:24 -04:00 — Workspace-wide
@@ -992,4 +992,106 @@ This workspace-level ledger records what Chrissy's real work teaches the agents 
 - **Evidence:** Chrissy first raised the risk of compounding changes and then clarified, “this only applies to using true room visualizations that I reject as reference images.”
 - **Failure or correction:** The agent first made the rule too broad and removed all earlier AI-made room images, including approved views that may be needed for consistency.
 - **System implication:** Keep using the full set of relevant original and approved references. Make each correction as a new image call, but never attach a rejected true-room visualization to the next request. The request builder must block rejected true-room drafts rather than block every generated picture.
+- **Status:** Integrated
+
+### 2026-10-07 17:00 -04:00 — test
+
+- **Learned:** Chrissy chose to keep both current brick-ranch elevation studies. She named the first shown image “1st elevation” and the second “2nd elevation.”
+- **Evidence:** Chrissy asked for both images to be saved in the Test job with those names.
+- **Failure or correction:** The images existed only in the temporary generated-image area before this save step.
+- **System implication:** Keep the exact selected copies in `Misc/visualizations` as `1st-elevation.png` and `2nd-elevation.png`. Because Chrissy chose to save them, they are approved references unless she later rejects one.
+- **Status:** Integrated
+### 2026-10-07 17:07 -04:00 — test
+
+- **Learned:** Chrissy wants patina-colored standing-seam metal-roof versions of both saved ranch elevations.
+- **Evidence:** Chrissy asked to make new images from 1st Elevation and 2nd Elevation showing a patina-colored metal roof.
+- **Failure or correction:** None; Chrissy approved both new drafts for saving.
+- **System implication:** Keep the roof request specific to aged blue-green copper patina metal, preserve the approved house design, and save chosen versions with Chrissy's requested names adapted only when Windows forbids a character.
+- **Status:** Integrated
+### 2026-10-13 14:40 -04:00 — test
+
+- **Learned:** Chrissy wants the Test wine-room design based on the supplied measured outline, with Lunada Bay Textile Imberline in the Blue Stone mixed finish on three selected walls.
+- **Evidence:** Chrissy supplied the measured outline, the wine-room design picture, and the official Imberline link for Blue Stone variant 41428468531353.
+- **Failure or correction:** The attached measured drawing does not visibly show the three highlighted walls, so their exact locations must be confirmed before the room is made.
+- **System implication:** Keep the handmade Blue Stone mix and the true 1/2 x 4-inch glass-piece scale; do not treat the official installed close view as one tile or one full sheet.
+- **Status:** Integrated
+
+### 2026-10-13 14:53 -04:00 — test
+
+- **Learned:** The Test wine room has an 8-foot-5-inch ceiling.
+- **Evidence:** Chrissy confirmed the ceiling height as 8 feet 5 inches.
+- **Failure or correction:** None.
+- **System implication:** Use the confirmed 101-inch ceiling height to control wall and tile scale in the plain room check and finished wine-room view.
+- **Status:** Integrated
+
+### 2026-10-13 14:55 -04:00 — test
+
+- **Learned:** Chrissy wants the wine-room view shown straight through the glass front, matching the supplied design picture.
+- **Evidence:** Chrissy answered yes when asked to confirm the straight-on glass-front view.
+- **Failure or correction:** None; a plain room check was made before adding the glass mosaic.
+- **System implication:** Keep this camera and five-sided room direction for the finished tile version if Chrissy approves the plain room check.
+- **Status:** Integrated
+
+### 2026-10-13 14:58 -04:00 — test
+
+- **Learned:** In the Test wine room, the 101-inch left wall is clear glass, and the 65 5/8-inch rear wall must read as a true angled wall.
+- **Evidence:** Chrissy rejected the first plain room check because it put racks on the left wall and did not show the angled wall correctly.
+- **Failure or correction:** The first plain room check misread the left wall as solid and flattened the angled wall. A fresh room check was made from the original plan and design picture only.
+- **System implication:** The room map must state wall material as well as wall length, and angled walls need an explicit visible turn in the image instructions.
+- **Status:** Integrated
+
+### 2026-10-13 15:00 -04:00 — test
+
+- **Learned:** The Test wine room needs the raised base beneath the wine racks shown in the design reference, but its finish will be chosen later.
+- **Evidence:** Chrissy asked to incorporate the base shown in the wine-room picture and said the material will be determined later.
+- **Failure or correction:** The plain room check did not include this base.
+- **System implication:** Show the base as a plain neutral placeholder during layout review and do not invent its finished material.
+- **Status:** Integrated
+
+### 2026-10-13 15:03 -04:00 — test
+
+- **Learned:** The Test wine-room dimension drawing controls an under-stair wall and ceiling profile: 101 inches high at the left, flat for 62 inches, then sloped for 65 5/8 inches down to a 64-inch-high right side.
+- **Evidence:** Chrissy rejected the rectangular-ceiling room check and directed attention to the angled ceiling.
+- **Failure or correction:** The earlier room checks wrongly treated the drawing as an overhead floor outline and showed a full flat ceiling. A fresh check was made from the original sources only.
+- **System implication:** Before generating, identify whether a dimensioned outline is a floor plan or a wall elevation; label each measurement as width, height, depth, or slope.
+- **Status:** Integrated
+
+### 2026-10-13 15:08 -04:00 — test
+
+- **Learned:** Outside the Test wine room's clear-glass left wall, Chrissy wants a short sheetrock section followed by only the beginning of a window.
+- **Evidence:** Chrissy asked to replace the hallway beside the glass wall with sheetrock and the start of a window, without showing the full wall or window.
+- **Failure or correction:** The prior room check showed an open hallway beside the glass return.
+- **System implication:** Exterior surroundings visible beside a glass enclosure are part of the room spec and must be carried into every fresh image request.
+- **Status:** Integrated
+
+### 2026-10-13 15:11 -04:00 — test
+
+- **Learned:** Chrissy approved and saved the corrected plain wine-room layout as `wine-room-image.png`, then requested the Lunada Bay finish version.
+- **Evidence:** Chrissy asked to save the latest room check as Wine Room Image and make a new image using the Lunada Bay material.
+- **Failure or correction:** Earlier room checks were rejected and were not used. The finished draft used the original plan, original design reference, approved plain room, official Blue Stone reference, and full corrected room spec.
+- **System implication:** Approved plain-room checks can anchor finish versions, while rejected drafts remain excluded. The raised base stays neutral until Chrissy selects its material.
+- **Status:** Integrated
+
+### 2026-10-13 15:24 -04:00 — test
+
+- **Learned:** Chrissy approved the Fisher wine-room view with Lunada Bay Imberline Blue Stone and named it Fisher Wine Room Lunada Bay.
+- **Evidence:** Chrissy asked to save the finished tile image under that name.
+- **Failure or correction:** None for the approved finished view; the raised-base material is still undecided.
+- **System implication:** Preserve this exact saved image and room spec as the approved Fisher wine-room finish version.
+- **Status:** Integrated
+
+### 2026-10-13 15:28 -04:00 — Workspace-wide
+
+- **Learned:** The client job folder formerly named Test is now named Misc.
+- **Evidence:** Chrissy asked to change the folder name from Test to Misc.
+- **Failure or correction:** Current workspace instructions, private-upload protection, handoff wording, tool examples, and useful saved-file paths still used the old name and were updated.
+- **System implication:** Future agents must ask for and use `Misc` as the job-folder name. Historical notes may still mention Test when describing work done before the rename.
+- **Status:** Integrated
+
+### 2026-10-13 17:07 -04:00 — Workspace-wide
+
+- **Learned:** A measured drawing must be identified as an overhead plan, front-facing wall view, wall-and-ceiling profile, or photograph before any measurement guides a room image. Glass surroundings and unfinished raised bases also need to be written into the room description.
+- **Evidence:** The Fisher wine room needed several corrections after its wall-and-ceiling profile was first treated as an overhead floor outline; its clear-glass return, nearby partial window, sloped ceiling, and unfinished raised base also had to be restored.
+- **Failure or correction:** The earlier process named walls and material scale but did not force the agent to identify the drawing type or keep height, ceiling, slope, and floor measurements separate.
+- **System implication:** Use the new Drawing Type Check before the four-wall map. Carry the checked drawing role, nearby visible areas, and unfinished placeholders into the plain room and every fresh image request.
 - **Status:** Integrated

@@ -50,6 +50,7 @@ The Visualizer workspace contains shared instructions and separate client job fo
 - `GITHUB_PUBLISHING_CHECK.md` — plain-language check used before anything is uploaded to the public GitHub repository.
 - `visualizer-tools/material-scale-check.html` — simple browser tool that turns room and full-sheet measurements into exact sheet counts, a picture-scale preview, and words for the image maker.
 - `visualizer-tools/fresh-revision-builder.html` — simple browser tool that prepares a complete new image request from original and approved references while blocking rejected true-room visualizations.
+- `visualizer-tools/drawing-type-check.html` — simple browser tool that identifies whether a source is an overhead plan, wall view, wall-and-ceiling profile, or photograph and keeps each measurement in the correct role.
 
 Keep these three special workspace files in uppercase exactly as shown.
 
@@ -58,7 +59,7 @@ Keep these three special workspace files in uppercase exactly as shown.
 - `Barsano` — new master-bath job with Marble Systems floor and wall references; the bathroom layout is still needed.
 - `Dobitsch` — active job with organized source images, swatches, visualizations, and handoffs.
 - `Esses` — client job folder that is currently empty.
-- `test` — separate trial job for work Chrissy is exploring before she knows whether it will become a regular job or whether the goal is possible.
+- `Misc` — separate folder for trial or miscellaneous work that may not become a regular client job.
 
 ### Standard folders inside a client job
 
@@ -118,7 +119,10 @@ When Chrissy asks to clean up a faint, marked-up, scanned, photographed, or hard
 When Chrissy asks to turn an approved plan into a real-looking room, follow `ROOM_SPEC_WORKFLOW.md`.
 
 - Ask the missing room questions one at a time before generating.
+- Identify what every source drawing shows before using its measurements. A front-facing wall or sloped-ceiling profile is not an overhead floor plan. Label each measurement as width, depth, height, opening, flat ceiling, or slope.
 - Before the plain room check, make a four-wall map using the chosen camera: near wall, opposite wall, left wall, and right wall. Record what touches each wall, which way it faces, and what the doorway lines up with.
+- Record glass walls and the nearby areas visible through or beside them, including whether a wall, doorway, or window should be full, partial, or hidden.
+- Keep an unfinished raised base or other undecided part as a plain placeholder. Do not invent its finished material.
 - Do not rely on an overhead plan alone. Collect the needed heights, item details, materials, furniture sizes, and camera direction.
 - Make a plain room check first. Confirm room shape, scale, cabinets, furniture, openings, and camera view before adding finishes.
 - Build every room image and revision from the unchanged original photo or plan, original product and item pictures, useful approved reference images, and one complete written room spec containing all approved choices and corrections. Label what each source controls.
@@ -220,7 +224,7 @@ There are currently four client job folders:
 - `Barsano`
 - `Dobitsch`
 - `Esses`
-- `test`
+- `Misc`
 
 The `output` directory is not a client job folder.
 

@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Drawing Type Check</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: Arial, Helvetica, sans-serif;
+      --ink: #242321;
+      --muted: #645f58;
+      --paper: #fff;
+      --page: #f7f4ef;
+      --line: #d9d0c5;
+      --green: #68796d;
+      --green-dark: #455349;
+      --soft-green: #eef3ef;
+      --warn: #9d3f32;
+      --soft-warn: #fff1ee;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--page); color: var(--ink); }
+    main { width: min(980px, calc(100% - 30px)); margin: 28px auto 48px; }
+    h1 { margin: 0 0 8px; font-size: clamp(30px, 5vw, 46px); }
+    h2 { margin: 0 0 14px; font-size: 1.25rem; }
+    p { line-height: 1.5; }
+    a { color: var(--green-dark); }
+    .intro, .small { color: var(--muted); }
+    .panel { background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 22px; margin-top: 18px; box-shadow: 0 8px 24px rgba(54, 44, 32, 0.06); }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    label { display: grid; gap: 7px; font-weight: 700; }
+    input, select, textarea { width: 100%; border: 1px solid #aaa197; border-radius: 9px; padding: 11px 12px; font: inherit; line-height: 1.45; background: white; }
+    textarea { min-height: 92px; resize: vertical; }
+    input:focus, select:focus, textarea:focus { outline: 3px solid #dce7df; border-color: var(--green); }
+    .full { grid-column: 1 / -1; }
+    .buttons { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-top: 18px; }
+    button { border: 0; border-radius: 9px; padding: 11px 16px; font: inherit; font-weight: 700; cursor: pointer; }
+    .primary { background: var(--green); color: white; }
+    .primary:hover { background: var(--green-dark); }
+    .secondary { background: #f2eee8; color: var(--ink); border: 1px solid var(--line); }
+    .message { display: none; margin-top: 14px; padding: 13px 14px; border-radius: 9px; background: var(--soft-warn); border-left: 5px solid var(--warn); color: #6e2b22; }
+    #instructions { min-height: 330px; }
+    .profile-only { display: none; }
+    @media (max-width: 700px) {
+      .grid { grid-template-columns: 1fr; }
+      .full { grid-column: auto; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Drawing Type Check</h1>
+    <p class="intro">Use this before a plain room picture. It stops a wall-and-ceiling drawing from being mistaken for an overhead floor plan.</p>
+
+    <section class="panel">
+      <h2>What does the drawing show?</h2>
+      <div class="grid">
+        <label>Job and room
+          <input id="room" type="text" placeholder="Example: Misc — Fisher wine room">
+        </label>
+        <label>Drawing type
+          <select id="drawingType">
+            <option value="">Choose one</option>
+            <option value="overhead floor plan">Overhead floor plan</option>
+            <option value="wall elevation or wall-and-ceiling profile">Wall elevation or wall-and-ceiling profile</option>
+            <option value="room photograph">Room photograph</option>
+            <option value="unsure">Unsure</option>
+          </select>
+        </label>
+        <label class="full">What this drawing controls
+          <textarea id="controls" placeholder="Example: Front wine-rack wall width, high and low wall heights, flat ceiling, and sloped ceiling."></textarea>
+        </label>
+      </div>
+    </section>
+
+    <section class="panel profile-only" id="profilePanel">
+      <h2>Wall-and-ceiling profile</h2>
+      <p class="small">Leave a box empty if it is not shown or not confirmed. Do not turn these measurements into floor depth.</p>
+      <div class="grid">
+        <label>Overall wall width, inches
+          <input id="overallWidth" type="number" min="0" step="0.125" placeholder="115">
+        </label>
+        <label>High-side wall height, inches
+          <input id="highHeight" type="number" min="0" step="0.125" placeholder="101">
+        </label>
+        <label>Flat ceiling length, inches
+          <input id="flatLength" type="number" min="0" step="0.125" placeholder="62">
+        </label>
+        <label>Sloped ceiling length, inches
+          <input id="slopeLength" type="number" min="0" step="0.125" placeholder="65.625">
+        </label>
+        <label>Low-side wall height, inches
+          <input id="lowHeight" type="number" min="0" step="0.125" placeholder="64">
+        </label>
+        <label>Slope direction
+          <select id="slopeDirection">
+            <option value="">Choose one</option>
+            <option value="high on the left and lower on the right">High on the left, lower on the right</option>
+            <option value="high on the right and lower on the left">High on the right, lower on the left</option>
+          </select>
+        </label>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Camera and nearby areas</h2>
+      <div class="grid">
+        <label>Camera location and direction
+          <input id="camera" type="text" placeholder="Example: Straight through the glass front">
+        </label>
+        <label>Raised base or other unfinished part
+          <input id="temporaryPart" type="text" placeholder="Example: Raised base under racks; finish not chosen">
+        </label>
+        <label>What appears just outside the left edge
+          <textarea id="leftOutside" placeholder="Example: Short sheetrock section, then only the beginning of a window."></textarea>
+        </label>
+        <label>What appears just outside the right edge
+          <textarea id="rightOutside" placeholder="Example: Plain wall; only partly visible."></textarea>
+        </label>
+        <label class="full">Glass walls, doors, windows, openings, and what must be partial or hidden
+          <textarea id="openings" placeholder="Example: Left return is clear glass. Show the whole glass edge, but not the full nearby window."></textarea>
+        </label>
+      </div>
+      <div class="buttons">
+        <button class="primary" id="build" type="button">Build the drawing check</button>
+      </div>
+      <div id="message" class="message" role="alert"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Words for the room request</h2>
+      <textarea id="instructions" readonly placeholder="The checked drawing description will appear here."></textarea>
+      <div class="buttons">
+        <button class="secondary" id="copy" type="button">Copy these words</button>
+        <a href="fresh-revision-builder.html">Open the fresh revision builder</a>
+        <a href="material-scale-check.html">Open the material scale check</a>
+      </div>
+    </section>
+  </main>
+  <script src="drawing-type-check.js"></script>
+</body>
+</html>
