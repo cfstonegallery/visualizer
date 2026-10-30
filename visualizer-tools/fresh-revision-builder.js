@@ -12,16 +12,25 @@
     return items.map((item) => `- ${item}`).join("\n");
   }
 
+  function referenceCount(values) {
+    return cleanLines(values.originalSources).length + cleanLines(values.appearanceSources).length;
+  }
+
   function buildRevisionRequest(values) {
     const originalSources = cleanLines(values.originalSources);
     const appearanceSources = cleanLines(values.appearanceSources);
     const fullSpec = String(values.fullSpec || "").trim();
+    const anchorDetails = String(values.anchorDetails || "").trim();
     const change = String(values.change || "").trim();
     const room = String(values.room || "").trim();
     const camera = String(values.camera || "").trim();
+    const totalReferences = referenceCount(values);
 
     if (originalSources.length === 0) {
       throw new Error("Add at least one untouched original plan or photograph.");
+    }
+    if (totalReferences > 5) {
+      throw new Error(`You listed ${totalReferences} pictures, but the image maker accepts up to 5 at a time. Keep the five most useful pictures here. Put extra sizes and product facts in the full description. If more pictures are essential, ask Chrissy which ones to use or prepare a combined reference sheet first.`);
     }
     if (!fullSpec) {
       throw new Error("Add the complete current room description, including earlier approved choices.");
@@ -42,6 +51,7 @@
         ? `Product, material, fixture, style, or approved room references:\n${bulletList(appearanceSources)}`
         : "",
       `Complete current room description:\n${fullSpec}`,
+      anchorDetails ? `Exact positions and sizes to keep:\n${anchorDetails}` : "",
       `Change required in this new draft:\n${change}`,
       "Rebuild the whole picture from these original sources and the complete description. Preserve every stated measurement, position, count, material, and camera direction. Do not mirror the room. Do not add, remove, or move anything unless the description says to do so."
     ];
@@ -56,6 +66,7 @@
       originalSources: document.getElementById("originalSources").value,
       appearanceSources: document.getElementById("appearanceSources").value,
       fullSpec: document.getElementById("fullSpec").value,
+      anchorDetails: document.getElementById("anchorDetails").value,
       change: document.getElementById("change").value,
       noAiReference: document.getElementById("noAiReference").checked
     };
@@ -72,6 +83,16 @@
       message.textContent = error.message;
       message.style.display = "block";
     }
+  }
+
+  function updateReferenceCount() {
+    const total = referenceCount({
+      originalSources: document.getElementById("originalSources").value,
+      appearanceSources: document.getElementById("appearanceSources").value
+    });
+    const output = document.getElementById("referenceCount");
+    output.textContent = `${total} of 5 pictures listed.`;
+    output.style.color = total > 5 ? "#9d3f32" : "";
   }
 
   async function copyRequest() {
@@ -94,10 +115,13 @@
     document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("build").addEventListener("click", build);
       document.getElementById("copy").addEventListener("click", copyRequest);
+      document.getElementById("originalSources").addEventListener("input", updateReferenceCount);
+      document.getElementById("appearanceSources").addEventListener("input", updateReferenceCount);
+      updateReferenceCount();
     });
   }
 
   if (typeof module !== "undefined" && module.exports) {
-    module.exports = { buildRevisionRequest, cleanLines };
+    module.exports = { buildRevisionRequest, cleanLines, referenceCount };
   }
 }());

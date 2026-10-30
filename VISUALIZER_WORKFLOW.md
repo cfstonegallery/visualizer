@@ -35,8 +35,17 @@ Last updated: 2026-10-13
 27. If Chrissy later rejects the scale in a saved image, correct the written room spec and use the original maker sheet for scale. Do not send the scale-rejected room visualization back as a reference.
 28. After a completed Zoe cycle is checked, save and upload its shared Visualizer changes to the connected GitHub repository.
 29. Keep client job folders and their plans, images, swatches, and handoffs off a public GitHub page unless Chrissy clearly approves public sharing of those client materials.
+30. Keep exact size and position notes beside the room description, using fixed points such as a wall edge, doorway, or window when something must line up.
+31. The image maker accepts at most five pictures in one request. Count original and product pictures together. Tell Chrissy when more than five are needed and ask which pictures matter most; carry extra sizes and product facts in the room description.
 
 ## IT implementation requirements
+
+### Moving work from another folder
+
+- If Chrissy asks to move work into a job folder, move the original items instead of making copies.
+- Before moving, list the exact files and check for name clashes.
+- After moving, check that the files are in the chosen job folder and are no longer in the old location.
+- Keep general software and unrelated files in their original place.
 
 ### Job gate
 
@@ -101,6 +110,7 @@ Follow `PRODUCT_LINK_INTAKE_TEMPLATE.md` when Chrissy supplies an official produ
 Follow `CLEAN_PLAN_WORKFLOW.md` when the supplied plan is faint, marked up, scanned, photographed, or difficult to read.
 
 - Save an unchanged copy in the active job's `floor-plans` folder.
+- Keep the measured main room outline separate from a shower, closet, or other projection beyond it; show the projection and its own confirmed size without folding it into the main length or width.
 - Identify the room shape, openings, cabinets, fixtures, appliances, useful furniture, readable measurements, and uncertain details.
 - Ask what furniture must remain only when the request and plan do not make that clear.
 - Make a clean overhead draft without guessing at faint measurements or hidden details.
@@ -126,6 +136,7 @@ Follow `ROOM_SPEC_WORKFLOW.md` after Chrissy approves a clean plan and asks for 
 - Never include a rejected true-room visualization as a reference. Keep using original and approved reference images when they help.
 - Use `visualizer-tools/fresh-revision-builder.html` to prepare the request and stop it when a rejected true-room visualization is still in the source list.
 - If an input limit prevents all relevant references from being included, tell Chrissy before generating.
+- Count all listed pictures together and stop the request when more than five are listed. Ask Chrissy which pictures matter most rather than silently dropping a source.
 
 ### Draft review
 

@@ -24,9 +24,12 @@ List what can be seen with confidence:
 - Plumbing fixtures and other fixed items.
 - Furniture that explains how the room is used.
 - Measurements that are clearly readable.
+- Any shower, closet, alcove, or other part that projects beyond the main measured room outline.
 - Marks or words that are too faint or unclear to trust.
 
 Do not guess at an unreadable measurement or hidden cabinet detail.
+
+Keep the main room measurements separate from attached projections. Draw the main length and width to the main room boundary. Draw each projection as part of the room shape, and show its own measurement separately. If the projection size is not clear, keep its shape and say that its size is unconfirmed; do not add it to the main room dimensions or invent a total.
 
 ## Step 3: Confirm what must remain
 
@@ -40,6 +43,7 @@ If the answer is already clear from Chrissy's request, use it. If it is unclear 
 - Use simple shading or color to separate cabinets or other requested areas.
 - Preserve the source room shape and item positions.
 - Show only measurements that can be read or that Chrissy confirms.
+- Make it clear which dimension lines measure the main room and which measure an attached projection outside that boundary.
 - Mark any uncertain detail in the review notes instead of inventing it.
 - Keep the image easy to compare with the original.
 
@@ -53,6 +57,7 @@ Check these items with Chrissy:
 - Fixture count and placement.
 - Furniture that should remain.
 - Every displayed measurement.
+- Whether any attached projection extends beyond the main room dimensions and is measured separately.
 - Anything omitted because it could not be read.
 
 The draft is not an approved source until Chrissy confirms the layout and measurements.

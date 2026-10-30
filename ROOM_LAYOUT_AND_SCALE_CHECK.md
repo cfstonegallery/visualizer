@@ -28,6 +28,8 @@ For a wall-and-ceiling profile, record:
 
 Use `visualizer-tools/drawing-type-check.html` to prepare the checked description.
 
+For an overhead plan with a shower or another feature that projects beyond the measured main room, draw the main outline first. Keep its length and width tied to that outline, then show the projection beyond it with a separate measurement. Do not fold the projection into the main room size.
+
 ## Part 2: Make a four-wall map
 
 Name the walls from the chosen camera view:

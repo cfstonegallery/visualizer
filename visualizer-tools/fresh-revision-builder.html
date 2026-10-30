@@ -79,20 +79,24 @@
     <section class="panel">
       <h2>Master sources</h2>
       <div class="grid">
-        <label class="full">Original plan or photograph names <span class="small">one per line</span>
+        <label class="full">Original plan or photograph names <span class="small">one picture per line</span>
           <textarea id="originalSources" placeholder="IMG_5417.jpeg&#10;original floor plan.pdf"></textarea>
         </label>
-        <label class="full">Product, material, fixture, style, or approved room references <span class="small">one per line</span>
+        <label class="full">Product, material, fixture, style, or approved room references <span class="small">one picture per line</span>
           <textarea id="appearanceSources" placeholder="cedar porch reference.png&#10;tile maker sheet.jpg"></textarea>
         </label>
+        <p class="small full" id="referenceCount" aria-live="polite">0 of 5 pictures listed.</p>
       </div>
     </section>
 
     <section class="panel">
       <h2>Complete current description</h2>
       <div class="grid">
-        <label class="full">Every approved choice and correction
+        <label class="full">Every approved choice and correction <span class="small">If more pictures matter than the image maker can accept, put extra sizes and product facts here and ask Chrissy which pictures matter most.</span>
           <textarea id="fullSpec" placeholder="Include the full layout, measurements, item locations, materials, sizes, direction, camera, and anything that must stay unchanged."></textarea>
+        </label>
+        <label class="full">Exact positions or sizes to keep <span class="small">Use nearby fixed points, such as “centered between these two windows” or “the shower projects beyond the measured room wall.”</span>
+          <textarea id="anchorDetails" placeholder="List the key points that must line up or stay a certain size."></textarea>
         </label>
         <label class="full">What should change in this new draft?
           <textarea id="change" placeholder="Describe the newest correction in plain language."></textarea>

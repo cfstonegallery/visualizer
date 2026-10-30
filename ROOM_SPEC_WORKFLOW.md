@@ -81,6 +81,8 @@ Use `visualizer-tools/fresh-revision-builder.html` to check the source list and 
 
 If the image maker cannot accept every relevant approved reference in one request, do not silently leave images out. Tell Chrissy what cannot be included and use a clearly labeled combined reference sheet or another agreed method.
 
+The image maker accepts at most five pictures in one request. Count the original plan or photo and all product, fixture, furniture, style, and approved-room references together. If more than five are needed, tell Chrissy which pictures are listed and ask which ones matter most. Carry exact sizes and product facts from extra sources in the written room spec.
+
 For each material reference, state whether it shows one tile, several tiles, one full mosaic sheet, or an installed room. When a flat image contains several tiles or one full sheet, state that clearly so the image maker does not treat the whole picture as one tile.
 
 ## Step 5: Make a plain room check

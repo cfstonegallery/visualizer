@@ -10,6 +10,11 @@
     return Number.isFinite(number) && number > 0 ? `${label}: ${number} inches.` : "";
   }
 
+  function statedMeasurement(value, label) {
+    const text = clean(value);
+    return text ? `${label}: ${text}.` : "";
+  }
+
   function buildDrawingCheck(values) {
     const drawingType = clean(values.drawingType);
     const controls = clean(values.controls);
@@ -38,6 +43,14 @@
       );
     } else if (drawingType === "overhead floor plan") {
       parts.push("Important: Read this from above. Floor lengths control the room outline; wall and ceiling heights must come from a separate confirmed source.");
+      if (clean(values.mainLength)) parts.push(statedMeasurement(values.mainLength, "Main room length"));
+      if (clean(values.mainWidth)) parts.push(statedMeasurement(values.mainWidth, "Main room width"));
+      if (clean(values.attachedPart)) {
+        const size = clean(values.attachedMeasure);
+        parts.push(size
+          ? `Attached projection outside the main room: ${clean(values.attachedPart)}; projection size: ${size}. Draw it beyond the main room boundary and keep it out of the main length and width.`
+          : `Attached projection outside the main room: ${clean(values.attachedPart)}. Show its footprint beyond the main room boundary, but do not invent its size or add it to the main length and width.`);
+      }
     } else if (drawingType === "unsure") {
       parts.push("Stop before making the room picture. Ask Chrissy whether this is an overhead plan or a front-facing wall view.");
     }
@@ -56,14 +69,16 @@
     const ids = [
       "room", "drawingType", "controls", "overallWidth", "highHeight",
       "flatLength", "slopeLength", "lowHeight", "slopeDirection", "camera",
-      "leftOutside", "rightOutside", "openings", "temporaryPart"
+      "leftOutside", "rightOutside", "openings", "temporaryPart", "mainLength",
+      "mainWidth", "attachedPart", "attachedMeasure"
     ];
     return Object.fromEntries(ids.map((id) => [id, document.getElementById(id).value]));
   }
 
-  function showProfileFields() {
-    const isProfile = document.getElementById("drawingType").value === "wall elevation or wall-and-ceiling profile";
-    document.getElementById("profilePanel").style.display = isProfile ? "block" : "none";
+  function showTypeFields() {
+    const type = document.getElementById("drawingType").value;
+    document.getElementById("profilePanel").style.display = type === "wall elevation or wall-and-ceiling profile" ? "block" : "none";
+    document.getElementById("overheadPanel").style.display = type === "overhead floor plan" ? "block" : "none";
   }
 
   function build() {
@@ -97,14 +112,14 @@
 
   if (typeof document !== "undefined") {
     document.addEventListener("DOMContentLoaded", function () {
-      document.getElementById("drawingType").addEventListener("change", showProfileFields);
+      document.getElementById("drawingType").addEventListener("change", showTypeFields);
       document.getElementById("build").addEventListener("click", build);
       document.getElementById("copy").addEventListener("click", copyInstructions);
-      showProfileFields();
+      showTypeFields();
     });
   }
 
   if (typeof module !== "undefined" && module.exports) {
-    module.exports = { buildDrawingCheck, measurement };
+    module.exports = { buildDrawingCheck, measurement, statedMeasurement };
   }
 }());
